@@ -1,5 +1,5 @@
 {% set name = "django-admin-rangefilter" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-admin-rangefilter-{{ version }}.tar.gz
-  sha256: 56035f4190d35aad4e699f8fd81306f964642edc96e15ec2a532a1598a466615
+  sha256: d0763bb10cb2a7a8868f167882219d1827372762f7893bcda1d739eecb5eb505
 
 build:
   noarch: python
