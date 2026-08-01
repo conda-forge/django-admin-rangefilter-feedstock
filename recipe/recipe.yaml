@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-admin-rangefilter
-  version: "0.13.5"
+  version: 0.14.0
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_admin_rangefilter-${{ version }}.tar.gz
-  sha256: 3134e9e877f59ccad5949cd25cd2db9bf20d170fd8070be584875fdca96d3a14
+  sha256: 1d7a6d86afa8ac92fecb01e7cece5fbc2065b3c2b4f3cc0e3fb719179d479509
 
 build:
   number: 0
@@ -25,8 +25,6 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }},<4.0
-    - django >=4.2
-
 tests:
   - python:
       imports:
